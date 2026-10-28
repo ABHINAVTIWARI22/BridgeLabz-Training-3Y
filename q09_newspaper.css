@@ -1,0 +1,30 @@
+/* Page background and padding around the content */
+body { background: #d9d4c7; margin: 0; padding: 20px; }
+main { max-width: 1000px; margin: 0 auto; padding: 30px; background: #fbf9f4; }
+
+/* Three newspaper-style columns */
+.columns {
+  column-count: 3;
+  column-gap: 30px;
+  font-family: "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;          /* justified text */
+}
+
+/* Heading spans across all columns */
+h1 {
+  column-span: all;
+  text-align: center;
+  font-size: 2.2rem;
+  border-bottom: 3px double #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Image floated to the left */
+img { float: left; margin: 0 15px 10px 0; max-width: 100%; }
+
+/* Fewer columns on smaller screens so it stays readable */
+@media (max-width: 800px) { .columns { column-count: 2; } }
+@media (max-width: 500px) { .columns { column-count: 1; } }
