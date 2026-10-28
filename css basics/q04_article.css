@@ -1,0 +1,25 @@
+body { font-family: Georgia, serif; background: #faf7f2; color: #222; margin: 0; padding: 20px; }
+article { max-width: 700px; margin: 0 auto; }
+h1 { font-size: 2.2rem; margin-bottom: 5px; }
+h2 { font-size: 1rem; font-weight: 400; color: #666; margin-top: 0; margin-bottom: 30px; }
+
+/* Consistent spacing between paragraphs */
+p { margin: 0 0 20px; line-height: 1.7; }
+
+/* Big first letter of every paragraph */
+p::first-letter { font-size: 2.2em; color: #8b2e3c; }
+
+/* First line of every paragraph bold */
+p::first-line { font-weight: bold; }
+
+/* Highlighted key words */
+mark { background-color: #ffd54f; padding: 0 3px; }
+
+/* Blockquote with left border and background */
+blockquote {
+  margin: 25px 0;
+  padding: 15px 20px;
+  border-left: 6px solid #8b2e3c;
+  background-color: #f1e4e6;
+  font-style: italic;
+}

@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Georgia, serif; color: #222; }
+
+header { background: #8b2e3c; color: #fff; padding: 20px; text-align: center; }
+header h1 { font-size: 2.5rem; font-weight: 900; }   /* big and bold */
+
+nav { background: #5c1d28; padding: 10px; text-align: center; }
+nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+
+/* Each section is full width with padding and a border to separate it */
+main section {
+  width: 100%;
+  padding: 100px 20px;
+  margin-bottom: 10px;
+  border-bottom: 5px solid #8b2e3c;
+  text-align: center;
+  color: #fff;
+}
+/* Different heading sizes/weights per section */
+#history h2 { font-size: 3rem;   font-weight: 700; }
+#culture h2 { font-size: 2.2rem; font-weight: 400; }
+#food h2    { font-size: 2.6rem; font-weight: 800; }
+#visit h2   { font-size: 1.8rem; font-weight: 300; }
+
+/* Parallax-like effect: the image stays fixed while the page scrolls */
+.parallax {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 4px #000;
+}
+.one { background-image: url("https://picsum.photos/id/1040/1200/800"); }
+.two { background-image: url("https://picsum.photos/id/1080/1200/800"); }
+
+/* Linear gradient section */
+.linear { background: linear-gradient(to right, #8b2e3c, #f0a04b); }
+
+/* Radial gradient section */
+.radial { background: radial-gradient(circle, #f0a04b, #5c1d28); }
+
+footer { background: #222; color: #fff; text-align: center; padding: 15px; }

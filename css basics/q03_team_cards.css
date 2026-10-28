@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #eef2f7; margin: 0; padding: 20px; }
+h1 { text-align: center; color: #1f3a5f; }
+
+/* Grid: 3 equal columns in one row */
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* Box model: uniform padding, border, rounded corners, shadow */
+.card {
+  padding: 20px;
+  margin: 0;
+  background: #fff;
+  border: 2px solid #c5d0de;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.card h3 { color: #666; font-weight: 400; }
+
+/* Highlighted card: different colour and border style */
+.card.lead {
+  background: #fff4d6;
+  border: 3px dashed #e0a100;
+}
+
+/* Responsive: single column under 600px */
+@media (max-width: 599px) {
+  .team { grid-template-columns: 1fr; }
+}
