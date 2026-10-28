@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Catalog</title>
+</head>
+<body>
+  <h1>Online Store - Product Catalog</h1>
+
+  <table border="1" cellpadding="8">
+    <!-- colspan: heading spans all 5 columns -->
+    <thead>
+      <tr><th colspan="5">Our Products</th></tr>
+      <tr>
+        <th>Image</th><th>Product Name</th><th>Description</th><th>Price</th><th>Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://picsum.photos/id/1/100/80" alt="Laptop" width="100" height="80"></td>
+        <td>Laptop</td>
+        <td>14-inch, 16GB RAM, 512GB SSD</td>
+        <td>Rs. 55,000</td>
+        <!-- rowspan: one availability note covers the two rows below -->
+        <td rowspan="2">In Stock</td>
+      </tr>
+      <tr>
+        <td><img src="https://picsum.photos/id/3/100/80" alt="Headphones" width="100" height="80"></td>
+        <td>Headphones</td>
+        <td>Wireless with noise cancellation</td>
+        <td>Rs. 3,500</td>
+      </tr>
+      <tr>
+        <td><img src="https://picsum.photos/id/20/100/80" alt="Notebook" width="100" height="80"></td>
+        <td>Notebook</td>
+        <td>200 pages, ruled</td>
+        <td>Rs. 80</td>
+        <td>Out of Stock</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
